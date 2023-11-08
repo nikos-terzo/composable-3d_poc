@@ -1,0 +1,27 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "env-cmd -f .env ts-node src/setup",
+    "mint-object": "env-cmd -f .env ts-node src/mint-object",
+    "insert-slot": "env-cmd -f .env ts-node src/insert-slot",
+    "insert-anchor": "env-cmd -f .env ts-node src/insert-anchor",
+    "attach-object": "env-cmd -f .env ts-node src/attach-object"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mysten/bcs": "^0.8.0",
+    "@mysten/kiosk": "^0.7.5",
+    "@mysten/sui.js": "^0.44.0",
+    "dotenv": "^16.0.3",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
